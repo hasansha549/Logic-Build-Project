@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Validate OTP</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+        <link rel="shortcut icon" href="/image/validate-otp.jpg" type="image/x-icon" />
+    </head>
+    <body>
+        <div id="otp_box_id" class="otp_box_container">
+            <h1>Enter OTP</h1>
+            <div id="otp-box-list-id" class="otp_box_list">
+                <input type="text" class="otp_box" maxlength="1" />
+                <input type="text" class="otp_box" maxlength="1" />
+                <input type="text" class="otp_box" maxlength="1" />
+                <input type="text" class="otp_box" maxlength="1" />
+            </div>
+            <button id="sentOTP" class="sentOTP">Sent OPT</button>
+            <button id="next" class="next">Next</button>
+
+            <p id="geenerated-otp-id" class="geenerate-otp"><span>Your OTP </span>...</p>
+            <p id="result-id" class="otp-validate-message"></p>
+            <p id="otp-expires-id"></p>
+        </div>
+    </body>
+</html>
