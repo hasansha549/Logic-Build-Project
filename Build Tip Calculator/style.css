@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+body {
+    background: #201e2f;
+    font-family: "Itim", cursive;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.to_body {
+    width: 90%;
+    max-width: 600px;
+}
+.logo_area {
+    background: #58b19f;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1em;
+    margin: 0;
+}
+.logo_area h2 {
+    color: #201e2f;
+}
+.logo_area,
+.total_per_person,
+#form {
+    padding: 25px 35px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#form {
+    background: #2c3e50;
+}
+
+#form label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#form input {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border: 0;
+    border-radius: 25px;
+    font-family: "Itim", cursive;
+    background: #374c60;
+    width: 100%;
+    color: #fff;
+    outline: none;
+    border: 1px solid transparent;
+}
+#form input:focus {
+    border: 1px solid #58b19f;
+}
+
+.people_area {
+    margin: 20px;
+}
+.people_area p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.inner_people {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner_people ul {
+    list-style: none;
+    display: flex;
+}
+
+.inner_people ul li {
+    font-size: 30px;
+}
+
+#minusSum {
+    background: #ff3838;
+}
+#plusSum {
+    background: #58b19f;
+}
+#minusSum,
+#plusSum {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 3px;
+}
+#peopleSum {
+    margin: 5px 20px 0;
+}
+
+#calculator {
+    background: #374c60;
+    border: 0;
+    padding: 10px 35px;
+    font-family: "Itim", cursive;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.4s;
+}
+
+#calculator:hover {
+    border: 1px solid #58b19f;
+}
+
+.total_per_person {
+    background: #121617;
+    margin-bottom: 10px;
+    display: none;
+}
+.total_per_person div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total_per_person hr {
+    border: 2px dashed #ddd;
+    margin-bottom: 10px;
+}
+
+.total_per_person h2 {
+    color: #58b19f;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.total_per_person h3,
+.total_per_person h4 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 10px;
+}

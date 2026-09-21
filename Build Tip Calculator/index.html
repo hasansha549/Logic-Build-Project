@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Mahmudul Hasan">
+        <script defer src="script.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="image/tip-calculator.jpg" type="image/x-icon">
+        <title>Tip Calculator</title>
+    </head>
+    <body>
+        <div class="to_body">
+            <div class="logo_area">
+                <h2>Tips Calculator</h2>
+            </div>
+            <div id="form">
+                <label for="totalBill">Total Bill</label>
+                <input type="text" id="totalBill" placeholder="Your Totla Bill" />
+                <label for="tipMain">Tip %</label>
+                <input type="text" id="tipMain" placeholder="Expected Tip" />
+                <div class="people_area">
+                    <p>People</p>
+                    <div class="inner_people">
+                        <ul>
+                            <li id="minusSum">-</li>
+                            <li id="peopleSum">1</li>
+                            <li id="plusSum">+</li>
+                        </ul>
+                        <button id="calculator">Calculator</button>
+                    </div>
+                </div>
+            </div>
+            <div class="total_per_person">
+                <h2>Summary</h2>
+                <div>
+                    <h3>Total Bill</h3>
+                    <h4>$ <span id="finalBill">0</span></h4>
+                </div>
+                <div>
+                    <h3>Tip Ammount</h3>
+                    <h4>$ <span id="tipAmmount">0</span></h4>
+                </div>
+                <div>
+                    <h3>Tax <span>5%</span></h3>
+                    <h4>$ <span id="taxAmmount">0</span></h4>
+                </div>
+                <hr />
+                <div>
+                    <h3>Total Per Person</span></h3>
+                    <h4>$ <span id="totalPerPerson">0</span></h4>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
