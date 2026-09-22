@@ -1,4 +1,4 @@
-JavaScript Quiz App
+<h1>JavaScript Quiz App</h1>
 A responsive MCQ Quiz Application built with HTML, CSS, and JavaScript. This project demonstrates interactive quiz functionality, answer validation, countdown timers, and score tracking.
 Features
 • 📝 Multiple-choice questions (MCQ)
