@@ -23,27 +23,6 @@ function expireOTP() {
     }, totalTime);
 }
 
-// function tackleOTPBoxes() {
-//     const boxes = document.getElementById("otp-box-list-id");
-//     boxes.addEventListener("input", function (e) {
-//         const terget = e.target;
-//         const value = terget.value;
-//         console.log(terget);
-
-//         if (isNaN(value)) {
-//             terget.value = "";
-//             return;
-//         }
-
-//         const nextElement = terget.nextElementSibling;
-
-//         if (nextElement) {
-//             nextElement.focus();
-//         }
-//         validateOTP();
-//     });
-// }
-
 function tackleOTPBoxes() {
     const boxes = document.getElementById("otp-box-list-id");
 
@@ -59,40 +38,13 @@ function tackleOTPBoxes() {
         }
 
         // type start next input selected
-        if (value !== "") {
-            const nextElement = target.nextElementSibling;
-
-            if (nextElement) {
-                nextElement.focus();
-            }
+        const nextElement = target.nextElementSibling;
+        if (nextElement) {
+            nextElement.focus();
         }
 
         validateOTP();
     });
-
-    // Backspace
-    // boxes.addEventListener("keydown", function (e) {
-    //     const target = e.target;
-
-    //     if (e.key === "Backspace") {
-    //         e.preventDefault();
-
-    //         // Current box-in digit
-    //         if (target.value !== "") {
-    //             target.value = "";
-    //             target.focus();
-    //             return;
-    //         }
-
-    //         // Current box empty focus on previous box
-    //         const previousElement = target.previousElementSibling;
-
-    //         if (previousElement) {
-    //             previousElement.value = "";
-    //             previousElement.focus();
-    //         }
-    //     }
-    // });
 
     // Bacspace handle Second
     boxes.addEventListener("keydown", function (e) {
@@ -100,10 +52,17 @@ function tackleOTPBoxes() {
         if (e.key === "Backspace") {
             if (target.value !== "") {
                 target.value = "";
-                const prviousElemnt = target.previousElementSibling;
+                const prviousElemnet = target.previousElementSibling;
 
-                if (prviousElemnt) {
-                    prviousElemnt.focus();
+                if (prviousElemnet) {
+                    prviousElemnet.focus();
+                }
+                e.preventDefault();
+            } else if (e.key === "Backspace") {
+                target.value == "";
+                const previousElement = target.previousElementSibling;
+                if (previousElement) {
+                    previousElement.focus();
                 }
                 e.preventDefault();
             }
